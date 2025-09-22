@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Laptop Terbaik Informatika</title>
+    <link rel="stylesheet" href="studi kasus.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content-box">
+                <h1>5 Laptop Terbaik untuk Mahasiswa Informatika</h1>
+                <p>Pilihan laptop terbaik berdasarkan performa, harga, dan portabilitas</p>
+            </div>
+            <div class="header-links">
+                <a href="#" onclick="openModal('Tentang Studi Kasus', 'Studi kasus ini dibuat untuk membantu mahasiswa Informatika memilih laptop terbaik sesuai kebutuhan.', 'Pertimbangan meliputi performa, daya tahan baterai, dan harga.')">Tentang</a>
+                <a href="#" onclick="openModal('Kontak', 'Email: support@laptopinformatika.com', 'Instagram: @laptop_informatika')">Kontak</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="product" onclick="openModal('MacBook Air M2', 'Performa sangat cepat, baterai hingga 18 jam, layar Retina nyaman untuk mata.', 'Harga: ± Rp 18.000.000')">
+                <img src="1. MacBook Air M2.jpg" alt="MacBook Air M2" class="product-img">
+                <h3>MacBook Air M2</h3>
+                <p class="description">Performa kencang, desain tipis, dan daya tahan baterai terbaik.</p>
+                <p class="price">Rp 18.000.000</p>
+            </div>
+
+            <div class="product" onclick="openModal('ASUS ZenBook 14 OLED', 'Layar OLED tajam, build quality premium, dan bobot ringan 1.3kg.', 'Harga: ± Rp 15.500.000')">
+                <img src="2. ZeenBook 14 oled.jpg" alt="ASUS ZenBook 14 OLED" class="product-img">
+                <h3>ASUS ZenBook 14 OLED</h3>
+                <p class="description">Laptop premium dengan layar OLED jernih dan bobot ringan.</p>
+                <p class="price">Rp 15.500.000</p>
+            </div>
+
+            <div class="product" onclick="openModal('Acer Swift X 14', 'Dilengkapi GPU Nvidia RTX, cocok untuk AI/ML atau desain grafis.', 'Harga: ± Rp 14.000.000')">
+                <img src="3. Acer.jpeg" alt="Acer Swift X 14" class="product-img">
+                <h3>Acer Swift X 14</h3>
+                <p class="description">Performa kencang dengan GPU RTX, ideal untuk mahasiswa yang butuh rendering.</p>
+                <p class="price">Rp 14.000.000</p>
+            </div>
+
+            <div class="product" onclick="openModal('Lenovo ThinkPad E14 Gen 5', 'Keyboard nyaman, bodi tangguh, cocok untuk coding intensif.', 'Harga: ± Rp 13.000.000')">
+                <img src="4. lenovo.png" alt="Lenovo ThinkPad E14 Gen 5" class="product-img">
+                <h3>Lenovo ThinkPad E14 Gen 5</h3>
+                <p class="description">Laptop tangguh dengan keyboard terbaik untuk programmer.</p>
+                <p class="price">Rp 13.000.000</p>
+            </div>
+
+            <div class="product" onclick="openModal('HP Pavilion Aero 13', 'Bobot hanya 1kg, performa cepat, layar cerah, cocok untuk mobilitas tinggi.', 'Harga: ± Rp 12.500.000')">
+                <img src="5. HP-Pavilion-Aero-13-4.jpg" alt="HP Pavilion Aero 13" class="product-img">
+                <h3>HP Pavilion Aero 13</h3>
+                <p class="description">Super ringan dengan performa tinggi, ideal untuk mahasiswa yang sering bepergian.</p>
+                <p class="price">Rp 12.500.000</p>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <h3 id="modal-title"></h3>
+            <p id="modal-text1"></p>
+            <p id="modal-text2"></p>
+            <button class="close-btn" onclick="closeModal()">Tutup</button>
+        </div>
+    </div>
+
+    <script>
+        function openModal(title, text1, text2) {
+            document.getElementById('modal-title').innerText = title;
+            document.getElementById('modal-text1').innerText = text1;
+            document.getElementById('modal-text2').innerText = text2;
+            document.getElementById('modal').style.display = 'flex';
+        }
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
