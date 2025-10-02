@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Instagram - Tailwind</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-gray-50">
+
+  <!-- Header -->
+  <header class="bg-white border-b sticky top-0">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <h1 class="text-lg font-bold">ArilepepHENGKerTZY</h1>
+      <!-- Tombol edit -->
+      <button class="hidden md:inline-block bg-blue-500 text-white px-4 py-1 rounded-md text-sm hover:bg-blue-600">
+        Edit Profil
+      </button>
+      <button class="md:hidden bg-blue-500 text-white px-4 py-1 rounded-md text-sm hover:bg-blue-600">
+        Edit
+      </button>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 py-6">
+    <!-- Bagian profil -->
+    <section class="md:flex md:items-center md:space-x-6 mb-6">
+      <div class="flex justify-center mb-4 md:mb-0">
+        <img src="13.jpg" alt="Foto Profil" class="w-32 h-32 md:w-36 md:h-36 rounded-full object-cover">
+      </div>
+      <div class="flex flex-col items-center md:items-start">
+        <h2 class="text-xl font-semibold">Syhrilmln</h2>
+        <p class="text-gray-700">BIO GAPENTING YANG PENTING SOLAT.</p>
+
+        <!-- Info Profil -->
+        <div class="flex justify-around w-full md:justify-start md:gap-10 text-center mt-3">
+          <div>
+            <span class="font-bold">12</span><br>
+            <span class="text-gray-500 text-sm">Postingan</span>
+          </div>
+          <div>
+            <span class="font-bold">340</span><br>
+            <span class="text-gray-500 text-sm">Pengikut</span>
+          </div>
+          <div>
+            <span class="font-bold">280</span><br>
+            <span class="text-gray-500 text-sm">Mengikuti</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tombol edit khusus mobile -->
+    <div class="block md:hidden mb-6 text-center">
+      <button class="bg-blue-500 text-white w-full py-2 rounded-md hover:bg-blue-600">
+        Edit Profil
+      </button>
+    </div>
+
+    <!-- Feed foto -->
+    <section class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
+      <!-- Gambar 1 -->
+      <a href="1.jpg" target="_blank" class="block overflow-hidden">
+        <img src="1.jpg" alt="1" class="w-full h-48 object-cover transform hover:scale-105 transition duration-300">
+      </a>
+      <!-- Gambar 2 -->
+      <a href="2.jpg" target="_blank" class="block overflow-hidden">
+        <img src="2.jpg" alt="2" class="w-full h-48 object-cover transform hover:scale-105 transition duration-300">
+      </a>
+      <!-- Gambar 3 -->
+      <a href="3.jpg" target="_blank" class="block overflow-hidden">
+        <img src="3.jpg" alt="3" class="w-full h-48 object-cover transform hover:scale-105 transition duration-300">
+      </a>
+      <!-- Gambar 4 -->
+      <a href="4.jpg" target="_blank" class="block overflow-hidden">
+        <img src="4.jpg" alt="4" class="w-full h-48 object-cover transform hover:scale-105 transition duration-300">
+      </a>
+      <!-- Gambar 5 -->
+      <a href="5.jpg" target="_blank" class="block overflow-hidden">
+        <img src="5.jpg" alt="5" class="w-full h-48 object-cover transform hover:scale-105 transition duration-300">
+      </a>
+      <!-- Gambar 6 -->
+      <a href="6.jpg" target="_blank" class="block overflow-hidden">
+        <img src="6.jpg" alt="6" class="w-full h-48 object-cover transform hover:scale-105 transition duration-300">
+      </a>
+      <!-- Gambar 7 -->
+      <a href="12.jpg" target="_blank" class="block overflow-hidden">
+        <img src="12.jpg" alt="7" class="w-full h-48 object-cover transform hover:scale-105 transition duration-300">
+      </a>
+      <!-- Gambar 8 -->
+      <a href="7.jpg" target="_blank" class="block overflow-hidden">
+        <img src="7.jpg" alt="8" class="w-full h-48 object-cover transform hover:scale-105 transition duration-300">
+      </a>
+      <!-- Gambar 9 -->
+      <a href="8.jpg" target="_blank" class="block overflow-hidden">
+        <img src="8.jpg" alt="9" class="w-full h-48 object-cover transform hover:scale-105 transition duration-300">
+      </a>
+      <!-- Gambar 10 -->
+      <a href="9.jpg" target="_blank" class="block overflow-hidden">
+        <img src="9.jpg" alt="10" class="w-full h-48 object-cover transform hover:scale-105 transition duration-300">
+      </a>
+      <!-- Gambar 11 -->
+      <a href="10.jpg" target="_blank" class="block overflow-hidden">
+        <img src="10.jpg" alt="11" class="w-full h-48 object-cover transform hover:scale-105 transition duration-300">
+      </a>
+      <!-- Gambar 12 -->
+      <a href="11.jpg" target="_blank" class="block overflow-hidden">
+        <img src="11.jpg" alt="12" class="w-full h-48 object-cover transform hover:scale-105 transition duration-300">
+      </a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t text-center py-4 mt-6">
+    <div class="text-gray-500 text-sm"></div>
+  </footer>
+
+</body>
+</html>
